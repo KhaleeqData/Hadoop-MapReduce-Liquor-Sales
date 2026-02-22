@@ -1,55 +1,46 @@
-Hadoop MapReduce – Liquor Sales
-📌 Project Overview
+# Hadoop MapReduce – Liquor Sales
 
-This project implements a Hadoop MapReduce pipeline to process raw liquor sales data and transform it into a structured, analysis-ready format.
+## 📌 Project Overview
+This project implements a Hadoop MapReduce pipeline to process raw liquor sales data into a structured, analysis-ready format.
 
-The goal was to extract insights from large-scale liquor sales records, including trends, totals, and patterns over time.
+The objective was to clean, transform, and aggregate liquor sales data for analytical and reporting purposes.
 
-🛠 Technologies Used
+---
 
-Hadoop MapReduce
+## 🛠 Technologies Used
+- Hadoop MapReduce
+- HDFS (Hadoop Distributed File System)
+- Java / Python Streaming
+- Data Cleaning Techniques
+- ETL Design Principles
 
-Java (or Python Streaming)
+---
 
-HDFS (Hadoop Distributed File System)
+## 🔄 ETL Process
 
-Data Cleaning & Transformation Techniques
+### 1️⃣ Extract
+- Loaded raw liquor sales dataset from HDFS
 
-ETL Design Principles
+### 2️⃣ Transform
+- Filtered out incomplete or invalid records
+- Standardized date formats and product names
+- Aggregated sales by date, store, and product
+- Calculated total sales, average sales, and quantity sold
 
-🔄 ETL Process
-1️⃣ Extract
+### 3️⃣ Load
+- Exported cleaned and aggregated data back to HDFS for analysis
 
-Ingested raw liquor sales data from CSV files stored in HDFS
+---
 
-2️⃣ Transform
+## 📊 Key Outcomes
+- Structured and clean liquor sales dataset
+- Aggregated metrics for sales analysis
+- Reusable MapReduce scripts for future datasets
 
-Filtered invalid or incomplete records
+---
 
-Standardized date formats and product names
-
-Aggregated sales by date, store, and product
-
-Calculated key metrics (total sales, average sales, quantity sold)
-
-3️⃣ Load
-
-Stored transformed data back into HDFS in a structured format for analysis
-
-📊 Key Outcomes
-
-Scalable processing of large liquor sales datasets
-
-Cleaned and aggregated data ready for analytics
-
-Demonstrated ability to implement distributed ETL pipelines using Hadoop MapReduce
-
-🚀 Why This Project Matters
-
+## 🚀 Why This Project Matters
 This project demonstrates:
-
-Strong data engineering skills with Big Data tools
-
-Expertise in distributed computing for large datasets
-
-Ability to design and implement end-to-end ETL pipelines
+- Strong data engineering skills with Big Data tools
+- Ability to implement distributed ETL pipelines
+- Practical knowledge of Hadoop MapReduce for large-scale datasets
